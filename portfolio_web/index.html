@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondřej Bublík | Portfolio</title>
+    <link rel="icon" href="./assets/SVG/B_Logo_symbol_Black.svg">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./scripts/scripts.js"></script>
+    <script defer src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script> 
+    <!--na sekci about používám animation-timeline: view(),
+    a to není podporované na firefoxu, tak tenhle importovaný script je workaround-->
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-container">
+           <a class="logo-image" href="/">
+                <svg viewBox="0 0 450.77 101.21">
+                    <path class="cls-1" d="M276.09,101.21h-99.44V1.77h99.44v99.44ZM191.65,86.21h69.44V16.77h-69.44v69.44Z"/>
+                    <path class="cls-1" d="M115.02,101.21H0L57.51,1.6l57.51,99.61ZM25.98,86.21h63.06l-31.53-54.61-31.53,54.61Z"/>
+                    <path class="cls-1" d="M430.45,101.21h-65.77l-20.33-62.55L397.56,0l53.21,38.66-20.33,62.55ZM375.57,86.21h43.98l13.59-41.83-35.58-25.85-35.58,25.85,13.59,41.83Z"/>
+                </svg>
+            </a>
+            <nav class="main-menu" >
+                <ul class="main-menu-list">
+                     <li class="main-menu-item">
+                         <a href="#scroll-about">About</a>
+                     </li>
+                     <li class="main-menu-item">
+                         <a href="#scroll-work">Work</a>
+                     </li>                    
+                     <li class="main-menu-item">
+                         <a href="#scroll-contact">Contact</a>
+                     </li>
+                </ul> 
+             </nav>
+             <button class="hamburger-menu">
+                <div class="first-row">
+                    <div id="dot" class="dot-appearance"></div>
+                    <div id="dot-one" class="dot-appearance"></div>
+                    <div id="dot" class="dot-appearance"></div>
+                </div>
+                <div class="second-row">
+                    <div id="dot-two" class="dot-appearance"></div>
+                    <div id="dot" class="dot-appearance"></div>
+                    <div id="dot-three" class="dot-appearance"></div>
+                </div>
+                <div class="first-row">
+                    <div id="dot" class="dot-appearance"></div>
+                    <div id="dot-four" class="dot-appearance"></div>
+                    <div id="dot" class="dot-appearance"></div>
+                </div>
+             </button>
+        </div>
+    </div>
+
+    <section class="home">
+
+        <div class="video-container">
+            <video class="video-hero" autoplay loop muted>
+                <source src="./assets/videos/Logo_reveal.mp4">
+            </video>
+        </div>
+
+       <div class="row-width">
+            <div class="content-position">
+                <div class="hero-content">
+                    <div class="freelance-container">
+                        <p class="freelance">Freelance availability</p>
+                        <div class="status-container">
+                            <div class="ball">
+                                <div class="pulse-ball"></div>
+                                <div class="status-ball"></div>
+                            </div>
+                            <p class="freelance-status">No capacity</p>
+                        </div>
+                    </div>
+                    <h1 class="line-a">3D Artist and Graphic Designer</h1>
+                    <h2 class="line-b">All the shit up until now by Ondřej Bublík</h2>
+                    <a class="hero-button" href="#scroll-work">VIEW MY WORK</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="scroll-about" class="introduction-container">
+        <div class="about-text">
+            <h3>About</h3>
+        </div>
+        <div class="introduction-mask">
+            <div class="introduction-appear">
+                <h1>Ondřej Bublík <img class="introduction-image" src="./assets/images/me.jpg"></h1>
+            </div>
+        </div>
+        <div class="introduction-mask">
+            <h1 class="introduction-appear-two">is a Czech 3D Artist and Designer</h1>
+        </div>
+        <div class="introduction-mask">
+            <h1 class="introduction-appear-three">focusing on his creative journey</h1>
+        </div>
+        <div class="introduction-mask">
+            <h1 class="introduction-appear-four">to creates stuff for fun<span class="dot-color">.</span></h1>
+        </div>
+    </div>
+
+    <div class="about-seperate">
+        <span class="line"></span>
+    </div>
+
+    <div class="skills-wrapper">
+        <div class="skills-container">
+            <div class="skill">
+                <h3>3D</h3>
+            </div>
+            <div class="skill">
+                <h3>2D</h3>
+            </div>
+            <div class="skill">
+                <h3>Motion Design</h3>
+            </div>
+            <div class="skill">
+                <h3>Graphic Design</h3>
+            </div>
+            <div class="skill">
+                <h3>UI/UX Design</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="label-work" id="scroll-work">
+        <h1>All the work up until now.</h1>
+    </div>
+
+    <section class="gallery" id="scroll-gallery">
+            <a class="work" href="./lp_cover.html">
+                <div class="work-image-container" href="./lp_cover.html">
+                    <div class="wide-image">
+                            <img class="image-fit" src="./assets/images/LP_Cover_thumbnail.jpg">
+                    </div>
+                    <div class="work-name-container">
+                        <h2 id="work-appear" class="work-name">Album Cover Design</h2>
+                    </div>
+                </div>
+            </a>
+            <a class="work" href="./lp_cover.html">
+                <div class="work-image-container" href="./lp_cover.html">
+                    <div class="wide-image">
+                            <img class="image-fit" src="./assets/images/Bonsai_thumbnail.jpg">
+                    </div>
+                    <div class="work-name-container">
+                        <h2 id="work-appear" class="work-name">Bonsai Growth</h2>
+                    </div>
+                </div>
+            </a>
+            <div class="two-works-container">
+                <div class="two-works">
+                    <a class="work" href="./lp_cover.html">
+                        <div class="work-image-container" href="./lp_cover.html">
+                            <div class="normal-image">
+                                    <img class="normal-image-fit" src="./assets/images/Gloria_thumbnail.jpg">
+                            </div>
+                            <div class="work-name-container">
+                                <h2 id="work-appear" class="work-name">GLORIA - Branding</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="two-works">
+                    <a class="work" href="./lp_cover.html">
+                        <div class="work-image-container" href="./lp_cover.html">
+                            <div class="normal-image">
+                                    <img class="normal-image-fit" src="./assets/images/Pomelo_thumbnail.jpg">
+                            </div>
+                            <div class="work-name-container">
+                                <h2 id="work-appear" class="work-name">POMELO - Branding</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="work" href="./lp_cover.html">
+                <div class="work-image-container" href="./lp_cover.html">
+                    <div class="wide-image">
+                            <img class="image-fit" src="./assets/images/DOTS._thumbnail.jpg">
+                    </div>
+                    <div class="work-name-container">
+                        <h2 id="work-appear" class="work-name">D O T S .</h2>
+                    </div>
+                </div>
+            </a>
+    </section>
+
+    <div class="quote-wrapper" id="scroll-contact">
+        <div class="quote-container">
+            <h3>Like what you see?</h3>
+            <h1>Lets work together.</h1>
+        </div>
+        <div class="freelance-container-two">
+            <p class="freelance-two">Freelance availability</p>
+            <div class="status-container">
+                <div class="ball">
+                    <div class="pulse-ball"></div>
+                    <div class="status-ball"></div>
+                </div>
+                <p class="freelance-status">No capacity</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-seperate">
+        <span class="line"></span>
+    </div>
+
+    <section class="contact-wrapper">
+        <div class="contact-container">
+            <div class="contact">
+                <h3><img class="contact-icon-triangle" src="./assets/SVG/triangle.svg">Contact</h3>
+                <h2>bubu.ondra@seznam.cz</h2>
+            </div>
+            <div class="fill-container"></div>
+            <div class="socials">
+                <h3><img class="contact-icon" src="./assets/SVG/square.svg">Socials</h3>
+                <a href="https://www.instagram.com/ondrej_bublik/" target="_blank">
+                 <h2>Instagram</h2>
+                </a>
+                <a href="https://cz.linkedin.com/in/ond%C5%99ej-bubl%C3%ADk-38b563236" target="_blank">
+                    <h2>LinkedIn</h2>
+                </a>
+            </div>
+            <div class="pages">
+                <h3><img class="contact-icon" src="./assets/SVG/n-gon.svg">Pages</h3>
+                <a href="/">
+                    <h2>Home</h2>
+                </a>
+                <a href="#scroll-about">
+                    <h2>About</h2>
+                </a>
+                <a href="#scroll-gallery">
+                    <h2>Work</h2>
+                </a>
+                <a href="#scroll-contact">
+                    <h2>Contact</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
