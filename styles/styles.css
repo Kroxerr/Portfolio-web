@@ -16,6 +16,7 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
+  font-size: 16px; /*16px to 1 rem*/
 }
 
 body {
@@ -29,19 +30,19 @@ body {
 h1 {
     font-family: OverusedGrotesk;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
 h2 {
     font-family: OverusedGrotesk;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
 h3 {
   font-family: OverusedGrotesk;
   font-weight: 550;
-  font-size: 16px;
+  font-size: 1rem;
   color: #a8a8a8;
 }
 
@@ -94,17 +95,19 @@ Nav Bar
   margin: 0%;
 }
 
-.main-menu-item a {
-  font-size: 16px;
+.main-menu-item button {
+  font-size: 1rem;
   text-decoration: none;
+  background-color: transparent;
   color: white;
+  border: none;
   font-family: GeneralSans;
   font-weight: 500;
   position: relative;
   transition: .25s;
 }
 
-.main-menu-item a:hover {
+.main-menu-item button:hover {
   color: #a8a8a8;
 }
 
@@ -189,6 +192,7 @@ Hero page stuff
 
 .home {
   height: calc(100vh - 70px);
+  scroll-margin-block-start: 100vh;
   background-color: black;
   align-items: center;
   justify-content: center;
@@ -283,7 +287,7 @@ Hero page stuff
   text-decoration: none;
   font-family: OverusedGrotesk;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 1rem;
   transition: all .4s cubic-bezier(.18,.07,.2,.99);
 }
 
@@ -313,7 +317,7 @@ Introduction
 }
 
 .introduction-container h1 {
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 1.2;
 }
 
@@ -405,7 +409,7 @@ Works Gallery
 }
 
 .label-work h1 {
-  font-size: 80px !important;
+  font-size: 5rem !important;
   line-height: 1;
 }
 
@@ -464,11 +468,11 @@ Works Gallery
 }
 
 .image-fit {
-  width: 100%;
+  width: 100vw;
 }
 
 .normal-image-fit {
-  width: 100%;
+  width: 50vw;
 }
 
 /*---------------------------------------------
@@ -531,7 +535,7 @@ Contacts
 }
 
 .contact h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .contact h3 {
@@ -579,7 +583,7 @@ Contacts
 }
 
 .socials h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: black;
   transition: .2s;
 }
@@ -604,9 +608,166 @@ Contacts
 }
 
 .pages h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600 !important;
   transition: .2s;
+}
+
+/*---------------------------------------------
+LP COVER
+---------------------------------------------*/
+/*---------------------------------------------
+WORK - Thumbnail
+---------------------------------------------*/
+
+.thumbnail-wrapper {
+  width: auto;
+}
+
+.thumbnail-container {
+  width: auto;
+}
+
+.thumbnail {
+  width: 100vw;
+  display: block;
+}
+
+/*---------------------------------------------
+WORK - Project Description
+---------------------------------------------*/
+
+.project-description-wrapper {
+  background-color: black;
+  width: 100vw;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description-container {
+  max-width: 1228px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description-box {
+  width: 100%;
+  padding: 30px 0px 60px 0px;
+}
+
+.project-name h1 {
+  color: white;
+  line-height: 1;
+}
+
+.project-line-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.project-line {
+  width: 100%;
+  height: 1px;
+  background-color: #a8a8a8;
+}
+
+.project-details-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.project-details-container p {
+  font-family: OverusedGrotesk;
+  font-weight: 300;
+  color: white;
+}
+
+.category-container {
+  width: 40%;
+}
+
+.category-name {
+  padding-bottom: 20px;
+}
+
+.synopsis-name {
+  padding-bottom: 20px;
+}
+
+/*---------------------------------------------
+WORK - Big Image
+---------------------------------------------*/
+
+.full-image-wrapper {
+  max-width: 1228px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-image-contrainer {
+  width: 100%;
+}
+
+.full-image {
+  width: 100%;
+}
+
+/*---------------------------------------------
+WORK - Text description for images
+---------------------------------------------*/
+
+.text-description-wrapper {
+  max-width: 1228px;
+  padding: 0px 20px 40px 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-description-container {
+  width: 100%;
+}
+
+.text-description-container h2 {
+  padding-bottom: 20px;
+}
+
+/*---------------------------------------------
+WORK - Two images
+---------------------------------------------*/
+
+.two-images-wrapper {
+  max-width: 1228px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.two-images {
+  width: calc(50% - 4.5px);
 }
 
 /*---------------------------------------------
@@ -643,7 +804,7 @@ MEDIA CHANGE - tablet
     top:0;
     left: 0;
     background-color: white;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     transition: .5s cubic-bezier(.26,.01,0,.97);
   }
 
@@ -659,9 +820,9 @@ MEDIA CHANGE - tablet
     gap: 50px;
   }
 
-  .main-menu-item a {
+  .main-menu-item button {
     color: black;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
   }
 
@@ -699,20 +860,24 @@ MEDIA CHANGE - tablet
     padding-bottom: 30px;
   }
 
+  /*---------------------------------------------
+  WORKS Section
+  ---------------------------------------------*/
+
+  .project-details-container {
+    gap: 50px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
 
-  h1 {
-    font-size: 60px;
-  }
-
   h2 {
-    font-size: 25px;
+    font-size: 1.563rem;
   }
 
   .label-work h1 {
-    font-size: 50px !important;
+    font-size: 3.125rem !important;
   }
 
   .hamburger-menu {
@@ -720,7 +885,7 @@ MEDIA CHANGE - tablet
   }
 
   .introduction-container h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 
   .introduction-image {
@@ -763,11 +928,7 @@ MEDIA CHANGE - phone
 @media only screen and (max-width: 492px) {
 
   h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 25px;
+    font-size: 3.125rem;
   }
 
   .video-container {
@@ -777,6 +938,200 @@ MEDIA CHANGE - phone
 
   .fill-container {
     display: none;
+  }
+
+  /*---------------------------------------------
+  WORKS Section
+  ---------------------------------------------*/
+
+  .project-description-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .project-details-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .category-container {
+    width: 100%;
+  }
+
+  .full-image-wrapper {
+    max-width: 1228px;
+    padding-bottom: 60px;
+  }
+
+  .two-images-wrapper {
+    max-width: 1228px;
+    padding-bottom: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .two-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .two-images {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1921px) {
+
+  html {
+    font-size: 25px;
+  }
+
+  .logo-image {
+    width: 120px;
+  }
+
+  .video-hero {
+    max-width: 600px;
+    min-width: 300px;
+  }
+
+  .hero-button {
+    border: 1px solid white;
+    padding: 22px 95px;
+    font-size: 1rem;
+  }
+
+  .nav-container {
+
+    max-width: 1639px;
+    padding: 30px 20px 27px 20px;
+  }
+  
+  .row-width {
+    max-width: 1639px;
+    padding: 0px 20px;
+  }
+  
+  .introduction-container {
+    margin: 125px auto 10px auto;
+    scroll-margin-block-start: 200px;
+    max-width: 1639px;
+    padding: 0px 20px;
+  }
+  
+  .about-seperate {
+    max-width: 1639px;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .skills-wrapper {
+    max-width: 1639px;
+    padding: 0px 20px;
+  }
+  
+  .label-work {
+    max-width: 1639px;
+    padding: 200px 20px 70px 20px;
+  }
+  
+  .quote-wrapper {
+    max-width: 1639px;
+    padding: 0px 20px;
+  
+  }
+  
+  .contact-seperate {
+    max-width: 1639px;
+    padding: 0px 20px;
+  
+  }
+  
+  .contact-wrapper {
+  
+    max-width: 1639px;
+    padding: 0px 20px;
+  }
+
+}
+
+@media only screen and (min-width: 2561px) {
+
+  html {
+    font-size: 40px;
+  }
+
+  .logo-image {
+    width: 180px;
+  }
+
+  .video-hero {
+    max-width: 850px;
+    min-width: 500px;
+  }
+
+  .hero-button {
+    border: 1px solid white;
+    padding: 35px 150px;
+    font-size: 1rem;
+  }
+
+  .nav-container {
+
+    max-width: 2458px;
+    padding: 50px 20px 47px 20px;
+  }
+  
+  .row-width {
+    max-width: 2458px;
+    padding: 0px 20px;
+  }
+  
+  .introduction-container {
+    margin: 125px auto 10px auto;
+    scroll-margin-block-start: 200px;
+    max-width: 2458px;
+    padding: 0px 20px;
+  }
+  
+  .about-seperate {
+    max-width: 2458px;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .skills-wrapper {
+    max-width: 2458px;
+    padding: 0px 20px;
+  }
+  
+  .label-work {
+    max-width: 2458px;
+    padding: 200px 20px 70px 20px;
+  }
+  
+  .quote-wrapper {
+    max-width: 2458px;
+    padding: 0px 20px;
+  
+  }
+  
+  .contact-seperate {
+    max-width: 2458px;
+    padding: 0px 20px;
+  
+  }
+  
+  .contact-wrapper {
+  
+    max-width: 2458px;
+    padding: 0px 20px;
   }
 
 }

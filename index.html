@@ -14,7 +14,7 @@
 
     <div class="nav-bar">
         <div class="nav-container">
-           <a class="logo-image" href="/">
+           <a class="logo-image" id="scroll-home">
                 <svg viewBox="0 0 450.77 101.21">
                     <path class="cls-1" d="M276.09,101.21h-99.44V1.77h99.44v99.44ZM191.65,86.21h69.44V16.77h-69.44v69.44Z"/>
                     <path class="cls-1" d="M115.02,101.21H0L57.51,1.6l57.51,99.61ZM25.98,86.21h63.06l-31.53-54.61-31.53,54.61Z"/>
@@ -24,13 +24,13 @@
             <nav class="main-menu" >
                 <ul class="main-menu-list">
                      <li class="main-menu-item">
-                         <a href="#scroll-about">About</a>
+                         <button id="scroll-about">About</button>
                      </li>
                      <li class="main-menu-item">
-                         <a href="#scroll-work">Work</a>
+                         <button id="scroll-work">Work</button>
                      </li>                    
                      <li class="main-menu-item">
-                         <a href="#scroll-contact">Contact</a>
+                         <button id="scroll-contact">Contact</button>
                      </li>
                 </ul> 
              </nav>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <section class="home">
+    <section class="home" id="home">
 
         <div class="video-container">
             <video class="video-hero" autoplay loop muted>
@@ -77,14 +77,14 @@
                     </div>
                     <h1 class="line-a">3D Artist and Graphic Designer</h1>
                     <h2 class="line-b">All the shit up until now by Ondřej Bublík</h2>
-                    <a class="hero-button" href="#scroll-work">VIEW MY WORK</a>
+                    <button class="hero-button" id="scroll-work-button">VIEW MY WORK</button>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <div id="scroll-about" class="introduction-container">
+    <div id="about" class="introduction-container">
         <div class="about-text">
             <h3>About</h3>
         </div>
@@ -128,11 +128,11 @@
         </div>
     </div>
 
-    <div class="label-work" id="scroll-work">
+    <div class="label-work" id="work">
         <h1>All the work up until now.</h1>
     </div>
 
-    <section class="gallery" id="scroll-gallery">
+    <section class="gallery">
             <a class="work" href="./lp_cover.html">
                 <div class="work-image-container" href="./lp_cover.html">
                     <div class="wide-image">
@@ -191,7 +191,7 @@
             </a>
     </section>
 
-    <div class="quote-wrapper" id="scroll-contact">
+    <div class="quote-wrapper" id="contact">
         <div class="quote-container">
             <h3>Like what you see?</h3>
             <h1>Lets work together.</h1>
@@ -230,7 +230,7 @@
             </div>
             <div class="pages">
                 <h3><img class="contact-icon" src="./assets/SVG/n-gon.svg">Pages</h3>
-                <a href="/">
+                <a href="#scroll-home">
                     <h2>Home</h2>
                 </a>
                 <a href="#scroll-about">
