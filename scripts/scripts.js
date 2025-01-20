@@ -34,7 +34,9 @@ itemTrigger.addEventListener("click", function(){
 });
 
 /*---------------------------------------------
-Solution - doesn't add id URL when clicking a scroll to button
+Solution - nepřidá #id do URL - nevím jak se to dělá v praxi, ale štvalo mě to
+
+mohl bych dát href="#id", ale to přidalo #id na konec URL a se mi prostě nelíbilo
 ---------------------------------------------*/
 
 const scrollAbout = document.getElementById("scroll-about");
@@ -46,6 +48,10 @@ const About = document.getElementById("about");
 const Work = document.getElementById("work");
 const Contact = document.getElementById("contact");
 const Home = document.getElementById("home");
+const scrollHomeFooter = document.getElementById("scroll-home-footer");
+const scrollAboutFooter = document.getElementById("scroll-about-footer");
+const scrollWorkFooter = document.getElementById("scroll-work-footer");
+const scrollContactFooter = document.getElementById("scroll-contact-footer");
 
 scrollAbout.addEventListener("click", function(){
     About.scrollIntoView()
@@ -66,3 +72,55 @@ scrollContact.addEventListener("click", function(){
 scrollHome.addEventListener("click", function(){
     Home.scrollIntoView()
 });
+
+
+scrollHomeFooter.addEventListener("click", function(){
+    Home.scrollIntoView()
+});
+
+scrollAboutFooter.addEventListener("click", function(){
+    About.scrollIntoView()
+});
+
+scrollWorkFooter.addEventListener("click", function(){
+    Work.scrollIntoView()
+});
+
+scrollContactFooter.addEventListener("click", function(){
+    Contact.scrollIntoView()
+});
+
+/*---------------------------------------------
+ChatGPT - Solution
+
+Smooth-Scroll na #id když se načte index.html, ale v url zůstane #id
+
+Jednoduše #id prostě odstraním z URL :DDD
+Je to absolutně otřesný řešení, ale přišlo mi to s kámošem vtipné tak jsem to implementoval :DDD
+
+Bohužel to na <a>Contact nefunguje a asi ani není třeba to dělat.
+
+---------------------------------------------*/
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Check if there's a hash in the URL
+    const hash = window.location.hash;
+  
+    if (hash) {
+      // Find the target section by the hash (removing the #)
+      const targetId = hash.substring(1); // e.g., "about" from "#about"
+      const targetSection = document.getElementById(targetId);
+  
+      if (targetSection) {
+        // Scroll smoothly to the section
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+  
+        // Remove the hash from the URL without refreshing the page
+        history.replaceState(null, null, window.location.pathname);
+      }
+    }
+  });
