@@ -80,6 +80,7 @@ Nav Bar
   fill: white;
   width: 80px;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .logo-image:hover {
@@ -105,6 +106,7 @@ Nav Bar
   font-weight: 500;
   position: relative;
   transition: .25s;
+  cursor: pointer
 }
 
 .main-menu-item button:hover {
@@ -121,6 +123,7 @@ Nav Bar
   align-items: center;
   flex-direction: column;
   transition: transform 0.3s cubic-bezier(0,.48,.44,1);
+  cursor: pointer
 }
 
 /*Burger menu animation*/
@@ -289,6 +292,7 @@ Hero page stuff
   font-weight: 100;
   font-size: 1rem;
   transition: all .4s cubic-bezier(.18,.07,.2,.99);
+  cursor: pointer
 }
 
 .hero-button:hover {
@@ -405,7 +409,7 @@ Works Gallery
 .label-work {
   max-width: 1228px;
   margin: auto;
-  padding: 200px 20px 70px 20px;
+  padding: 140px 20px 70px 20px;
 }
 
 .label-work h1 {
@@ -443,6 +447,7 @@ Works Gallery
 .work-name {
   color: transparent;
   transition: .2s;
+  text-align: center;
 }
 
 .work:hover .work-name {
@@ -517,7 +522,7 @@ Contacts
 .contact-wrapper {
   display: flex;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   max-width: 1228px;
   padding: 0px 20px;
   justify-content: center;
@@ -562,19 +567,20 @@ Contacts
   padding-left: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .socials a {
   text-decoration: underline 1px;
   text-decoration-color: black;
-  display: flex;
+  transition: .2s;
 }
 
-.socials h2:hover a {
+.socials a:hover {
   text-decoration-color: #a8a8a8;
 }
 
-.socials h2:hover {
+.socials a:hover h2 {
   color: #a8a8a8;
 }
 
@@ -591,12 +597,14 @@ Contacts
 .pages {
   width: 100%;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .pages a {
   color: #a8a8a8;
   text-decoration: none;
-  display: flex;
 }
 
 .pages a:hover h2 {
@@ -611,10 +619,11 @@ Contacts
   font-size: 1rem;
   font-weight: 600 !important;
   transition: .2s;
+  width: fit-content;
 }
 
 /*---------------------------------------------
-LP COVER
+WOOOOOOOOOOOOOOORK PAGE
 ---------------------------------------------*/
 /*---------------------------------------------
 WORK - Thumbnail
@@ -726,6 +735,16 @@ WORK - Big Image
 }
 
 /*---------------------------------------------
+WORK - Vimeo
+---------------------------------------------*/
+
+.vimeo-wrapper {
+  max-width: 1228px;
+  padding-bottom: 100px !important;
+  margin: auto;
+}
+
+/*---------------------------------------------
 WORK - Text description for images
 ---------------------------------------------*/
 
@@ -742,8 +761,8 @@ WORK - Text description for images
   width: 100%;
 }
 
-.text-description-container h2 {
-  padding-bottom: 20px;
+.text-description-container p {
+  padding-top: 20px;
 }
 
 /*---------------------------------------------
@@ -768,6 +787,64 @@ WORK - Two images
 
 .two-images {
   width: calc(50% - 4.5px);
+}
+
+/*---------------------------------------------
+WORK - Image gallery
+---------------------------------------------*/
+
+.images-gallery-wrapper {
+  max-width: 1228px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+}
+
+.gallery-image-container {
+  width: calc(33.33% - 6px);
+  display: flex;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.images-gallery-wrapper-two {
+  max-width: 1228px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-gallery-wrapper-two-response {
+  max-width: 1228px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image-container-two {
+  width: calc(50% - 4.5px);
+  display: flex;
+}
+
+.gallery-image-container-two-response {
+  width: calc(50% - 4.5px);
+  display: flex;
 }
 
 /*---------------------------------------------
@@ -833,6 +910,10 @@ MEDIA CHANGE - tablet
     padding: 15px 60px;
   }
 
+  .contact-wrapper {
+    margin-bottom: 50px;
+  }
+
   .work-name-container {
     padding: 30px 30px;
   }
@@ -866,6 +947,10 @@ MEDIA CHANGE - tablet
 
   .project-details-container {
     gap: 50px;
+  }
+  
+  .gallery-image-container {
+    width: calc(50% - 4.5px);
   }
 
 }
@@ -983,6 +1068,22 @@ MEDIA CHANGE - phone
   }
 
   .two-images {
+    width: 100%;
+  }
+
+  .vimeo-wrapper {
+    padding-bottom: 60px !important;
+  }
+
+  .gallery-image-container {
+    width: 100%;
+  }
+
+  .images-gallery-wrapper-two {
+    padding-bottom: 60px;
+  }
+
+  .gallery-image-container-two-response {
     width: 100%;
   }
 
