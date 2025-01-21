@@ -1020,6 +1020,30 @@ MEDIA CHANGE - tablet
     padding-left: 0;
   }
 
+  .two-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .two-images {
+    width: 100%;
+  }
+
+  .gallery-image-container {
+    width: 100%;
+  }
+
+  .images-gallery-wrapper-two {
+    padding-bottom: 60px;
+  }
+
+  .gallery-image-container-two-response {
+    width: 100%;
+  }
+
 }
  
 /*---------------------------------------------
@@ -1075,32 +1099,8 @@ MEDIA CHANGE - phone
     justify-content: center;
   }
 
-  .two-images-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 9px;
-  }
-
-  .two-images {
-    width: 100%;
-  }
-
   .vimeo-wrapper {
     padding-bottom: 60px !important;
-  }
-
-  .gallery-image-container {
-    width: 100%;
-  }
-
-  .images-gallery-wrapper-two {
-    padding-bottom: 60px;
-  }
-
-  .gallery-image-container-two-response {
-    width: 100%;
   }
 
 }
